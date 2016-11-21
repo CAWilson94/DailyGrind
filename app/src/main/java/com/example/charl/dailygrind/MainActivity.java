@@ -1,5 +1,6 @@
 package com.example.charl.dailygrind;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,12 +23,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "You shall not have coffee!", Toast.LENGTH_LONG).show();
-                
+
             }
         });
     }
 
     public void onGetCustomCoffeeClick(View view) {
+        /* Using an intent: and intention to do something!
+           Do so by passing context as well as activity we want to open
+         */
+
+        Intent getCoffeeNameIntent = new Intent(this,CustomCoffee.class )
+
+
     }
 /*
 Adding image view for the coffee logo
