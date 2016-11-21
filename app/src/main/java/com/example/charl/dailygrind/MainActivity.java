@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onGetCustomCoffeeClick(View view) {
+    }
 /*
 Adding image view for the coffee logo
  */
