@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DailyGrind</string>
+    <string name="saved_coffee">Saved Coffee</string>
+    <string name="map_coffee">Map Coffee</string>
+    <string name="custom_coffee">Custom Coffee</string>
+
 </resources>
