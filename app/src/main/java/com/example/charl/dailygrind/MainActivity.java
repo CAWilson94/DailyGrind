@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
            Do so by passing context as well as activity we want to open
          */
 
-        Intent getCoffeeNameIntent = new Intent(this,CustomCoffee.class )
+        Intent getCoffeeNameIntent = new Intent(this,CustomCoffee.class );
 
 
     }
