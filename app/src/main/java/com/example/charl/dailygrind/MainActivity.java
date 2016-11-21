@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,7 +58,15 @@ public class MainActivity extends AppCompatActivity {
         coffeeNameMessage.append("" + sentBackCoffee);
     }
 
+    PopupWindow pWin;
+    LayoutInflater linf;
 
 
+    public void MakeMoreButtonsOnClick(View view) {
+        // Want to create two new buttons on click: probably need to pass in transparent xml
+        linf = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+        // Need new layout for the window
 
+
+    }
 }
