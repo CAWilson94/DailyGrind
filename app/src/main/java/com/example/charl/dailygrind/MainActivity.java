@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        // create text view to put coffee custom name inside of it
+        TextView coffeeNameMessage = (TextView) findViewById(R.id.name_enter_coffee); //TODO: fix dis
+        // get coffee name value
+        String sentBackCoffee = data.getStringExtra("coffeeName");
+        coffeeNameMessage.append("" + sentBackCoffee);
     }
 
 
