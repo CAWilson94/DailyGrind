@@ -41,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(getCoffeeNameIntent, result);// call activity and get result back
     }
 
+    /**
+     * Need to handle the coffee name being sent back after the custom coffee screen closes
+     * Generate: override methods.
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+
 
 
 }
