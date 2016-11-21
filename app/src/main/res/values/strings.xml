@@ -17,5 +17,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="enter_the_name_of_your_coffee">Enter the name of your coffee!</string>
 
 </resources>
