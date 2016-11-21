@@ -54,6 +54,18 @@
         android:text="@string/custom_coffee"
         android:id="@+id/button_custom_coffee"
         android:layout_below="@+id/button_saved_coffee"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="onGetCustomCoffee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_name_of_your_coffee"
+        android:layout_below="@+id/button_custom_coffee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
