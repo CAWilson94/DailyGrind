@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -25,5 +26,14 @@ public class CustomCoffee extends Activity {
     }
 
     public void onSendCoffeeName(View view) {
+        EditText userCoffeeName = (EditText) findViewById(R.id.coffee_name_edit_text);
+        // Get name typed into editable text box
+        String coffeeName = String.valueOf(userCoffeeName.getText());
+        // Send this back to main activity: using another intent.
+        Intent goBackPreviousActivity = new Intent();
+        goBackPreviousActivity.putExtra("coffeeName", coffeeName);
+        setResult(RESULT_OK,goBackPreviousActivity);
+        // screen done working - close with finish
+        finish();
     }
 }

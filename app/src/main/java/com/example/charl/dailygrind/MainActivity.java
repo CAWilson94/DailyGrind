@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         getCoffeeNameIntent.putExtra("callingActivity", "MainActivity"); // key given, value want to retrieve
         // call for that activity to run..
         startActivityForResult(getCoffeeNameIntent, result);// call activity and get result back
-
-
     }
 /*
 Adding image view for the coffee logo
