@@ -18,5 +18,6 @@
         completions."
     </string>
     <string name="enter_the_name_of_your_coffee">Enter the name of your coffee!</string>
+    <string name="enter_coffee">Enter</string>
 
 </resources>

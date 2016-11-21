@@ -20,7 +20,19 @@
             android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/users_name_edit_text"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <!-- Send some data along ! :D -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_coffee"/>
     </LinearLayout>
 
 </LinearLayout>
