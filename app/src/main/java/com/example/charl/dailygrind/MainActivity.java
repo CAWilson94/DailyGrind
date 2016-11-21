@@ -40,9 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // call for that activity to run..
         startActivityForResult(getCoffeeNameIntent, result);// call activity and get result back
     }
-/*
-Adding image view for the coffee logo
- */
+
 
 
 }
