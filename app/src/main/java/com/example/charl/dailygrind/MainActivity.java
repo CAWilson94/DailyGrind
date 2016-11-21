@@ -32,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         /* Using an intent: and intention to do something!
            Do so by passing context as well as activity we want to open
          */
-
         Intent getCoffeeNameIntent = new Intent(this,CustomCoffee.class );
+        // When clicked - second screen open
+        final int result = 1;
+        // Put data we want over to second screen
+        getCoffeeNameIntent.putExtra("callingActivity", "MainActivity");
+        // call for that activity to run..
+        startActivityForResult(getCoffeeNameIntent,result);// call activity and get result back
 
 
     }
