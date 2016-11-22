@@ -22,11 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".CustomCoffee"
-            android:label="Get custom coffee"
-            android:theme="@style/AppTheme" />
-
     </application>
 
 </manifest>
