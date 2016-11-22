@@ -27,6 +27,11 @@
             android:label="Get custom coffee"
             android:theme="@style/AppTheme" />
 
+        <activity
+            android:name=".xtra"
+            android:label="extra buttons!"
+            android:theme="@style/AppTheme" />
+
     </application>
 
 </manifest>
