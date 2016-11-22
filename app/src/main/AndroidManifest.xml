@@ -28,6 +28,9 @@
         <activity android:name=".MapCoffeeActivity">
         </activity>
 
+        <activity android:name=".SavedCoffeeActivity">
+            </activity>
+
     </application>
 
 </manifest>

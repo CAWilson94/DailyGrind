@@ -27,7 +27,8 @@
         android:id="@+id/button_saved_coffee"
         android:layout_below="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignStart="@+id/imageView1" />
+        android:layout_alignStart="@+id/imageView1"
+        android:onClick="onGetSavedCoffeeClick"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -38,7 +39,7 @@
         android:layout_below="@+id/imageView1"
         android:layout_alignRight="@+id/imageView1"
         android:layout_alignEnd="@+id/imageView1"
-        android:onClick="onGetCustomMapClick"/>
+        android:onClick="onGetMapCoffeeClick"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"

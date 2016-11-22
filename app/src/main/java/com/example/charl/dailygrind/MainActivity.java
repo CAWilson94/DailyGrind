@@ -10,32 +10,25 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button = (Button) findViewById(R.id.button_saved_coffee);
-        button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "You shall not have coffee!", Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     public void onGetCustomCoffeeClick(View view) {
-        Intent intent = new Intent(MainActivity.this, CustomCoffeeActivity.class);
-        startActivity(intent);
+        Intent customIntent = new Intent(MainActivity.this, CustomCoffeeActivity.class);
+        startActivity(customIntent);
 
     }
 
-    public void onGetCustomMapClick(View view) {
+    public void onGetMapCoffeeClick(View view) {
         Intent mapIntent = new Intent(MainActivity.this, MapCoffeeActivity.class);
         startActivity(mapIntent);
+    }
+
+    public void onGetSavedCoffeeClick(View view) {
+        Intent savedIntent = new Intent(MainActivity.this, SavedCoffeeActivity.class);
+        startActivity(savedIntent);
     }
 }
