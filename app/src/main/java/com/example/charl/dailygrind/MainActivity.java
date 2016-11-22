@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onGetCustomCoffeeClick(View view) {
-        Toast.makeText(MainActivity.this, "You shall not have custom coffee!", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(MainActivity.this, CustomCoffeeActivity.class);
+        startActivity(intent);
+        
     }
 
     public void onGetCustomMapClick(View view) {
