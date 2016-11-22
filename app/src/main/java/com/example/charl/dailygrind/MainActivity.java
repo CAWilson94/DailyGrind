@@ -31,10 +31,11 @@ public class MainActivity extends AppCompatActivity {
     public void onGetCustomCoffeeClick(View view) {
         Intent intent = new Intent(MainActivity.this, CustomCoffeeActivity.class);
         startActivity(intent);
-        
+
     }
 
     public void onGetCustomMapClick(View view) {
-        Toast.makeText(MainActivity.this, "You shall not have maps coffee!", Toast.LENGTH_LONG).show();
+        Intent mapIntent = new Intent(MainActivity.this, MapCoffeeActivity.class);
+        startActivity(mapIntent);
     }
 }
