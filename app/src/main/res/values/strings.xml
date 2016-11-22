@@ -21,5 +21,6 @@
     <string name="enter_coffee">Enter</string>
     <string name="calling_activity_message">The calling activity was</string>
     <string name="the_chosen_coffee_was">The chosen coffee was..</string>
+    <string name="customfloat">customFloat</string>
 
 </resources>
