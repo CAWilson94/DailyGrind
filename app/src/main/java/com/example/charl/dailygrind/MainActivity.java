@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
         // Need new layout for the window
         ViewGroup container = (ViewGroup) linf.inflate(R.layout.xtra_buttons, null);
         // Create a window for the buttons to stay on..
-        pWin = new PopupWindow(container, 1000, 1000);
-//        /pWin.setBackgroundDrawable(new BitmapDrawable());
+        pWin = new PopupWindow(container,400,400);
+        pWin.setBackgroundDrawable(new BitmapDrawable());
         pWin.setOutsideTouchable(true); // modal pls
         // Need to actually shwo the window
         pWin.showAtLocation(relativeLayout, Gravity.NO_GRAVITY, 500, 500); // represent location of pop up window

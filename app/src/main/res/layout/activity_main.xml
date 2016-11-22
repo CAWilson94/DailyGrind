@@ -19,15 +19,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/coffee"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -78,13 +69,14 @@
         android:layout_alignLeft="@+id/button_custom_coffee"
         android:layout_alignStart="@+id/button_custom_coffee" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/make_more_button"
-        android:layout_below="@+id/button_custom_coffee"
-        android:layout_centerHorizontal="true"
+        android:src="@mipmap/coffee"
         android:contentDescription="coffeeButton"
-        android:onClick="MakeMoreButtonsOnClick"/>
+        android:onClick="MakeMoreButtonsOnClick"
+        android:layout_alignBottom="@+id/name_enter_coffee"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
