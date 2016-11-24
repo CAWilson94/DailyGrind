@@ -27,4 +27,9 @@ public class ContactAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         return null;
     }
+
+    @Override
+    public int getViewTypeCount() {
+        return super.getViewTypeCount();
+    }
 }
