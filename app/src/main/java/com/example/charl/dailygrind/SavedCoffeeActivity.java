@@ -21,7 +21,7 @@ public class SavedCoffeeActivity extends Activity {
 
         String[] stuff = {"Type:           Americano\nSize:            250ml\nCal:              20 kcal \nLocation:    Custom\nCaffiene:     250mg", "Type:           Cappucino\nSize:            250ml\nCal:              200 kcal \nLocation:    Starbucks\nCaffiene:     100mg", "Type:           Mocha\nSize:            250ml\nCal:              290 kcal \nLocation:    Starbucks\nCaffiene:     130mg", "Type:           Caramel Frap\nSize:            250ml\nCal:              270 kcal \nLocation:    Starbucks\nCaffiene:     170mg","Type:           Instant Coffee\nSize:            200ml\nCal:              20 kcal \nLocation:    Home\nCaffiene:     200mg","Type:           Espresso\nSize:            250ml\nCal:              20 kcal \nLocation:    Cafe Nero\nCaffiene:     250mg", "Type:           Americano\nSize:            200ml\nCal:              20 kcal \nLocation:    Tinder Box\nCaffiene:     150mg"};
 
-        final ListAdapter adapter = new ArrayAdapter<String>(this, R.layout.row_layout, R.id.text_view_row_1, stuff);
+        final ListAdapter adapter = new customAdapter<String>(this, R.layout.row_layout, R.id.text_view_row_1, stuff);
 
         ListView listView = (ListView) findViewById(R.id.list_view);
 
