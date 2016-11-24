@@ -17,5 +17,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="feed_back_title">Feed Back Title</string>
+    <string name="feed_back_name">Bob</string>
+    <string name="feed_back_coffee_type">Coffee Type</string>
 
 </resources>

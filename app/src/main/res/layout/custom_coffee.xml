@@ -12,5 +12,29 @@
 
         <!--Put form controls here-->
 
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed_back_title"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_height="wrap_content"
+            android:hint="@string/feed_back_name"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_height="wrap_content"
+            android:hint="@string/feed_back_coffee_type"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent">
+        </EditText>
+
     </LinearLayout>
 </ScrollView>
