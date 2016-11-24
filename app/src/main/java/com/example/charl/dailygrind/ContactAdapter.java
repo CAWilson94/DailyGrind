@@ -32,4 +32,9 @@ public class ContactAdapter extends BaseAdapter {
     public int getViewTypeCount() {
         return super.getViewTypeCount();
     }
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
 }
