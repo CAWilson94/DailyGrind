@@ -67,14 +67,14 @@ public class CustomCoffeeActivity extends AppCompatActivity implements LoaderCal
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_coffee);
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
+        mEmailView = (AutoCompleteTextView) findViewById(R.id.coffee_type_prompt);
         populateAutoComplete();
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == R.id.login || id == EditorInfo.IME_NULL) {
+                if (id == R.id.coffee_location_prompt || id == EditorInfo.IME_NULL) {
                     attemptLogin();
                     return true;
                 }
@@ -160,8 +160,8 @@ public class CustomCoffeeActivity extends AppCompatActivity implements LoaderCal
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
-            mPasswordView.setError(getString(R.string.error_invalid_password));
+        if (isEmailValid(password)) {
+            mPasswordView.setError(getString(R.string.error_invalid_email));
             focusView = mPasswordView;
             cancel = true;
         }
@@ -198,7 +198,8 @@ public class CustomCoffeeActivity extends AppCompatActivity implements LoaderCal
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        String kenco = "kenco";
+        return password.toLowerCase().contains(kenco.toLowerCase());
     }
 
     /**
