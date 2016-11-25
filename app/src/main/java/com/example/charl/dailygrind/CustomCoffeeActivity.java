@@ -171,7 +171,7 @@ public class CustomCoffeeActivity extends AppCompatActivity implements LoaderCal
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email)) {
+        } else if (isEmailValid(email)) {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
@@ -192,7 +192,8 @@ public class CustomCoffeeActivity extends AppCompatActivity implements LoaderCal
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        String kenco = "kenco";
+        return email.toLowerCase().contains(kenco.toLowerCase());
     }
 
     private boolean isPasswordValid(String password) {
