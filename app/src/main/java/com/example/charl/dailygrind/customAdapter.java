@@ -17,7 +17,7 @@ public class customAdapter extends ArrayAdapter<String> {
         super(context, R.layout.row_layout_2, values);
     }
 
-    String[] otherStuff = {"20kal                     200mg Caffiene", "20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene"};
+    String[] otherStuff = {"20kal                     200mg Caffiene", "290kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene","20kal                     200mg Caffiene"};
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // layout inflater time!

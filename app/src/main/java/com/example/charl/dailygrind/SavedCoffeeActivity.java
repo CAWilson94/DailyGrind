@@ -19,8 +19,7 @@ public class SavedCoffeeActivity extends Activity {
         setContentView(R.layout.saved_coffee);
         Toast.makeText(SavedCoffeeActivity.this, "boooop", Toast.LENGTH_SHORT).show();
 
-        String[] stuff = {"Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks","Tall Americano    Starbucks"};
-        String[] otherStuff = {"20kal        200mg Caffiene"};
+        String[] stuff = {"Tall Americanoboo    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks"};
 
         final ListAdapter adapter = new customAdapter(this, stuff);
 
@@ -32,7 +31,7 @@ public class SavedCoffeeActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String stuffSelected = "You selected " + String.valueOf(parent.getItemAtPosition(position));
-                Toast.makeText(SavedCoffeeActivity.this, "Tinderbox Americano", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SavedCoffeeActivity.this, "Starbucks Americano", Toast.LENGTH_SHORT).show();
             }
         });
     }
