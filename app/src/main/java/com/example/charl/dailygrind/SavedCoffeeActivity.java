@@ -19,7 +19,7 @@ public class SavedCoffeeActivity extends Activity {
         setContentView(R.layout.saved_coffee);
         Toast.makeText(SavedCoffeeActivity.this, "boooop", Toast.LENGTH_SHORT).show();
 
-        String[] stuff = {"Tall Americanoboo    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks"};
+        String[] stuff = {"Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks", "Tall Americano    Starbucks"};
 
         final ListAdapter adapter = new customAdapter(this, stuff);
 
