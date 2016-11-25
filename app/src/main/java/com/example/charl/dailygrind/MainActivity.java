@@ -1,9 +1,8 @@
 package com.example.charl.dailygrind;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,52 +10,25 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button = (Button) findViewById(R.id.button_saved_coffee);
-        button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "You shall not have coffee!", Toast.LENGTH_LONG).show();
-
-            }
-        });
     }
 
     public void onGetCustomCoffeeClick(View view) {
-        /* Using an intent: and intention to do something!
-           Do so by passing context as well as activity we want to open
-         */
-        Intent getCoffeeNameIntent = new Intent(this, CustomCoffee.class);
-        // When clicked - second screen open
-        final int result = 1;
-        // Put data we want over to second screen
-        getCoffeeNameIntent.putExtra("callingActivity", "MainActivity"); // key given, value want to retrieve
-        // call for that activity to run..
-        startActivityForResult(getCoffeeNameIntent, result);// call activity and get result back
+        Intent customIntent = new Intent(MainActivity.this, CustomCoffeeActivity.class);
+        startActivity(customIntent);
+
     }
 
-    /**
-     * Need to handle the coffee name being sent back after the custom coffee screen closes
-     * Generate: override methods.
-     */
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        // create text view to put coffee custom name inside of it
-        TextView coffeeNameMessage = (TextView) findViewById(R.id.name_enter_coffee); //TODO: fix dis
-        // get coffee name value
-        String sentBackCoffee = data.getStringExtra("coffeeName");
-        coffeeNameMessage.append("" + sentBackCoffee);
+    public void onGetMapCoffeeClick(View view) {
+        Intent mapIntent = new Intent(MainActivity.this, MapCoffeeActivity.class);
+        startActivity(mapIntent);
     }
 
-
-
-
+    public void onGetSavedCoffeeClick(View view) {
+        Intent savedIntent = new Intent(MainActivity.this, SavedCoffeeActivity.class);
+        startActivity(savedIntent);
+    }
 }

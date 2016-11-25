@@ -8,18 +8,24 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">CREATE CUSTOM NECTAR OF LIFE</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_email">This coffee is bad and you should feel bad</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="enter_the_name_of_your_coffee">Enter the name of your coffee!</string>
-    <string name="enter_coffee">Enter</string>
-    <string name="calling_activity_message">The calling activity was</string>
-    <string name="the_chosen_coffee_was">The chosen coffee was..</string>
+    <string name="feed_back_title">Feed Back Title</string>
+    <string name="feed_back_name">Bob</string>
+    <string name="feed_back_coffee_type">Coffee Type</string>
+    <string name="title_activity_custom_coffee">Add Custom Coffee</string>
+    <string name="prompt_coffee_type">Coffee Type</string>
+    <string name="prompt_coffee_place">Coffee Brand</string>
+    <string name="prompt_caffiene_content">Input Caffeine Content (mg)</string>
+    <string name="prompt_size">Input Serving Size (ml)</string>
+    <string name="prompt_serving_number">Input number of servings</string>
+
 
 </resources>

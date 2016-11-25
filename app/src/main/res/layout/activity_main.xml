@@ -8,7 +8,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.charl.dailygrind.MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:id="@+id/main_view_layout"
+    android:visibility="visible">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -18,24 +20,16 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/coffee"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <Button
-        style="?android:attr/buttonStyleSmall"
+        style="@style/Base.TextAppearance.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/saved_coffee"
         android:id="@+id/button_saved_coffee"
         android:layout_below="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignStart="@+id/imageView1" />
+        android:layout_alignStart="@+id/imageView1"
+        android:onClick="onGetSavedCoffeeClick"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -45,7 +39,8 @@
         android:id="@+id/button_map_coffee"
         android:layout_below="@+id/imageView1"
         android:layout_alignRight="@+id/imageView1"
-        android:layout_alignEnd="@+id/imageView1" />
+        android:layout_alignEnd="@+id/imageView1"
+        android:onClick="onGetMapCoffeeClick"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -58,23 +53,6 @@
         android:layout_marginBottom="20dp"
         android:onClick="onGetCustomCoffeeClick"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/name_enter_coffee"
-        android:text="@string/enter_the_name_of_your_coffee"
-        android:layout_below="@+id/button_custom_coffee"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:textStyle="bold"
-        android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/the_chosen_coffee_was"
-        android:layout_below="@+id/name_enter_coffee"
-        android:layout_alignLeft="@+id/button_custom_coffee"
-        android:layout_alignStart="@+id/button_custom_coffee" />
 
 </RelativeLayout>
