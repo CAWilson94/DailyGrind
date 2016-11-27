@@ -104,11 +104,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .title("I am here!");
         mMap.addMarker(options);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom((latLng),15));
-
-
-
-
-
+        
     }
 
     @Override
