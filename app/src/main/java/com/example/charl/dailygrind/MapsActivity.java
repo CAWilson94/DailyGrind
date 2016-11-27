@@ -21,6 +21,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
+    public static final String TAG = MapsActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
