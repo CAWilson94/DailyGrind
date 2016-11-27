@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onGetMapCoffeeClick(View view) {
-        Intent mapIntent = new Intent(MainActivity.this, MapCoffeeActivity.class);
+        Intent mapIntent = new Intent(MainActivity.this, MapsActivity.class);
         startActivity(mapIntent);
     }
 

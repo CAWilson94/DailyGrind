@@ -26,6 +26,7 @@
     <string name="prompt_caffiene_content">Input Caffeine Content (mg)</string>
     <string name="prompt_size">Input Serving Size (ml)</string>
     <string name="prompt_serving_number">Input number of servings</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>
