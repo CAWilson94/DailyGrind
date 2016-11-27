@@ -78,4 +78,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
+    // On resume and not start since this should be resumed if interrupted not restarted.
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setUpMapIfNeeded();
+        mGoogleApiClient.connect();
+    }
+
+    private void setUpMapIfNeeded() {
+    }
+
 }
