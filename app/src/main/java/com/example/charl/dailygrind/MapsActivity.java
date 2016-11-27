@@ -82,9 +82,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // On resume and not start since this should be resumed if interrupted not restarted.
     @Override
     protected void onResume() {
+        // Always called after onCreate() so if we connect here we can always access location when
+        // activity is visible
         super.onResume();
         setUpMapIfNeeded();
         mGoogleApiClient.connect();
+        // Need to think about adding corresponding code in onPause()
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mGoogleApiClient.isConnected()) {
+            mGoogleApiClient.disconnect();
+        }
     }
 
     private void setUpMapIfNeeded() {
