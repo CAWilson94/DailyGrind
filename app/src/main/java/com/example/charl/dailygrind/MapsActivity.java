@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -36,6 +37,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(map);
         mapFragment.getMapAsync(this);
 
+        // Create a new google API client!
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
@@ -64,12 +66,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-
+        Log.i(TAG, "Location services connected.");
     }
 
     @Override
     public void onConnectionSuspended(int i) {
-
+        Log.i(TAG, "Location services suspended. Please reconnect.");
     }
 
     @Override
