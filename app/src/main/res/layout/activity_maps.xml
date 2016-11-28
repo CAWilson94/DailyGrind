@@ -17,15 +17,30 @@
         tools:context="com.example.charl.dailygrind.MapsActivity" />
 
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="COFFEE"
-        android:elevation="24dp"
-        android:fadingEdgeLength="@dimen/activity_horizontal_margin"
-        android:textStyle="bold"
-        />
+        android:layout_height="88dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COFFEE"
+            android:elevation="24dp"
+            android:fadingEdgeLength="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COFFEE"
+            android:elevation="24dp"
+            android:fadingEdgeLength="@dimen/activity_horizontal_margin"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 
 </LinearLayout>
